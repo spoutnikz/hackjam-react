@@ -3,16 +3,22 @@
   "version": "0.0.1",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "start": "hackages live",
+    "build": "hackages watch"
   },
-  "keywords": ["react, hackages, hackjam"],
+  "keywords": [
+    "react, hackages, hackjam"
+  ],
   "author": "007@hackages.io",
   "license": "MIT",
   "dependencies": {
     "react": "^15.0.2",
     "react-dom": "^15.0.2"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "hackages": "0.0.7"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/hackages/hackjam-react.git"
