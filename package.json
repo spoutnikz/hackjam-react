@@ -1,0 +1,25 @@
+{
+  "name": "hackjam-react",
+  "version": "0.0.1",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": ["react, hackages, hackjam"],
+  "author": "007@hackages.io",
+  "license": "MIT",
+  "dependencies": {
+    "react": "^15.0.2",
+    "react-dom": "^15.0.2"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hackages/hackjam-react.git"
+  },
+  "bugs": {
+    "url": "https://github.com/hackages/hackjam-react/issues"
+  },
+  "homepage": "https://github.com/hackages/hackjam-react#readme",
+  "description": "this application does'nt work, fix it please!!"
+}
