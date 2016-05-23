@@ -4,8 +4,9 @@
   "main": "index.js",
   "scripts": {
     "test": "jest",
-    "start": "hackages live",
-    "build": "hackages watch"
+    "run:browser": "hackages live",
+    "run:watch": "hackages watch",
+    "start": "npm-run-all --parallel run:watch run:browser"
   },
   "keywords": [
     "react, hackages, hackjam"
@@ -13,11 +14,12 @@
   "author": "007@hackages.io",
   "license": "MIT",
   "dependencies": {
+    "hackages": "0.0.8",
     "react": "^15.0.2",
     "react-dom": "^15.0.2"
   },
   "devDependencies": {
-    "hackages": "0.0.7"
+    "npm-run-all": "^2.1.1"
   },
   "repository": {
     "type": "git",
