@@ -18,7 +18,27 @@ Oh no, you won't need that! We promise you React on the menu so let's focus on R
 We create a package that will do that grunt work for you: [hackages](https://github.com/hackages/hackages)
 You don't need to know anything about it unless you're very curious. Just run `npm start`and you'll be good to go.
 
-Getting started:
+## Getting started:
 
 Just clone this [repository](https://github.com/hackages/hackjam-react.git) and run `npm start`
+
+An example of the application is available [here](http://hackjam.hackages.io/)
+
+
+## Things to know about React
+
+- Everything is a component
+- Component in React are pure function
+- Container components vs presentation components
+- Props vs State
+
+## What's next?
+
+- State management with Redux
+- Developer tools for React
+- Data management with Relay
+
+## 
+
+
 
