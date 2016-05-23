@@ -6,6 +6,7 @@
     "test": "jest",
     "run:browser": "hackages live",
     "run:watch": "hackages watch",
+    "prestart": "npm i",
     "start": "npm-run-all --parallel run:watch run:browser"
   },
   "keywords": [
