@@ -7,7 +7,8 @@
     "run:browser": "hackages live",
     "run:watch": "hackages watch",
     "prestart": "npm i",
-    "start": "npm-run-all --parallel run:watch run:browser"
+    "start": "npm-run-all --parallel run:watch run:browser",
+    "deploy": "surge"
   },
   "keywords": [
     "react, hackages, hackjam"
