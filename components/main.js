@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import filters from '../mocks/filters';
 import books from '../mocks/books';
-import Book from './book';
+import BookList from './bookList';
 import CategoryFilter from './categoryFilters';
-import SearchField from './searchField';
+import Sidebar from './sidebar';
 
 class Main extends Component {
   constructor () {
@@ -67,21 +67,8 @@ class Main extends Component {
         </div>
       </div>
 
-      <section className={ className }>
-      { this.state.books.map( book => <Book key={book.title} book={book}/>) }
-      </section>
-
-      <div className={ this.state.navClosed? 'filter filter-is-visible': 'filter' }>
-			  <form>
-				<div className="filter-block">
-					<h4>Search</h4>
-
-					<SearchField search={this.search} />
-				</div>
-
-        </form>
-        <a href="#0" className="close" onClick={ this.closeSideBar }>Close</a>
-      </div>
+      <BookList books={this.state.books} />
+			<Sidebar search={this.search} closeSideBar={this.closeSideBar} navClosed={this.state.navClosed} />
 
       <a href="#0" className="filter-trigger" onClick={ this.openSideBar }>Filters</a>
     </main>
