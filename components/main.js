@@ -3,6 +3,7 @@ import filters from '../mocks/filters';
 import books from '../mocks/books';
 import Book from './book';
 import CategoryFilter from './categoryFilters';
+import SearchField from './searchField';
 
 class Main extends Component {
   constructor () {
@@ -67,7 +68,7 @@ class Main extends Component {
       </div>
 
       <section className={ className }>
-      { this.state.books.map( book => <Book book={book}/>) }
+      { this.state.books.map( book => <Book key={book.title} book={book}/>) }
       </section>
 
       <div className={ this.state.navClosed? 'filter filter-is-visible': 'filter' }>
@@ -75,9 +76,7 @@ class Main extends Component {
 				<div className="filter-block">
 					<h4>Search</h4>
 
-					<div className="filter-content">
-						<input type="search" placeholder="title, price..." onChange={ this.search }/>
-					</div>
+					<SearchField search={this.search} />
 				</div>
 
         </form>
